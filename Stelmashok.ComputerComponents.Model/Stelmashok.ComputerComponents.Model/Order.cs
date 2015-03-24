@@ -1,45 +1,32 @@
-﻿namespace Stelmashok.ComputerComponents.Model
+﻿/// <summary>
+/// The Model namespace.
+/// </summary>
+namespace Stelmashok.ComputerComponents.Model
 {
     using System;
     using System.Collections.Generic;
 
-    public class Order
+    /// <summary>
+    /// Class Order.
+    /// </summary>
+    public class Order : BaseClass
     {
-        private List<Equipment> equipments;
+        /// <summary>
+        /// Gets or sets the equipments.
+        /// </summary>
+        /// <value>The equipments.</value>
+        public List<Equipment> Equipments { get; set; }
 
-        private double sumPrice;
+        /// <summary>
+        /// Gets or sets the date.
+        /// </summary>
+        /// <value>The date.</value>
+        public DateTime Date { get; set; }
 
-        private DateTime date;
-
-        public Order()
-        {
-            this.equipments = new List<Equipment>();
-            sumPrice = 0;
-            date = DateTime.Now;
-        }
-
-        public List<Equipment> Equipments
-        {
-            get
-            {
-                return this.equipments;
-            }
-        }
-
-        public DateTime Date
-        {
-            get
-            {
-                return this.date;
-            }
-        }
-
-        public double SumPrice
-        {
-            get
-            {
-                return this.sumPrice;
-            }
-        }
+        /// <summary>
+        /// Gets or sets the sum price.
+        /// </summary>
+        /// <value>The sum price.</value>
+        public double SumPrice { get; set; }
     }
 }

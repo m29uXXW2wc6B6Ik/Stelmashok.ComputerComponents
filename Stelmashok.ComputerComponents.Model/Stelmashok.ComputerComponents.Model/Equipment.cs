@@ -1,45 +1,35 @@
-﻿namespace Stelmashok.ComputerComponents.Model
+﻿/// <summary>
+/// The Model namespace.
+/// </summary>
+namespace Stelmashok.ComputerComponents.Model
 {
-    public class Equipment
+    /// <summary>
+    /// Class Equipment.
+    /// </summary>
+    public class Equipment : BaseClass
     {
-        private Category category;
+        /// <summary>
+        /// Gets or sets the price.
+        /// </summary>
+        /// <value>The price.</value>
+        public double Price { get; set; }
 
-        private Firm firm;
+        /// <summary>
+        /// Gets or sets the model.
+        /// </summary>
+        /// <value>The model.</value>
+        public Model Model { get; set; }
 
-        private Model model;
+        /// <summary>
+        /// Gets or sets the firm.
+        /// </summary>
+        /// <value>The firm.</value>
+        public Firm Firm { get; set; }
 
-        private double price;
-
-        public double Price
-        {
-            get
-            {
-                return this.price;
-            }
-        }
-
-        public Model Model
-        {
-            get
-            {
-                return this.model;
-            }
-        }
-
-        public Firm Firm
-        {
-            get
-            {
-                return this.firm;
-            }
-        }
-
-        public Category Category
-        {
-            get
-            {
-                return this.category;
-            }
-        }
+        /// <summary>
+        /// Gets or sets the category.
+        /// </summary>
+        /// <value>The category.</value>
+        public Category Category { get; set; }
     }
 }

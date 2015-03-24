@@ -1,19 +1,25 @@
-﻿namespace Stelmashok.ComputerComponents.Model
+﻿/// <summary>
+/// The Model namespace.
+/// </summary>
+namespace Stelmashok.ComputerComponents.Model
 {
     using System.Collections.Generic;
 
-    public class Model
+    /// <summary>
+    /// Class Model.
+    /// </summary>
+    public class Model : BaseClass
     {
-        private List<Firm> firms;
-
+        /// <summary>
+        /// Gets or sets the name.
+        /// </summary>
+        /// <value>The name.</value>
         public string Name { get; set; }
 
-        public List<Firm> Firms
-        {
-            get
-            {
-                return this.firms;
-            }
-        }
+        /// <summary>
+        /// Gets or sets the firms.
+        /// </summary>
+        /// <value>The firms.</value>
+        public List<Firm> Firms { get; set; }
     }
 }

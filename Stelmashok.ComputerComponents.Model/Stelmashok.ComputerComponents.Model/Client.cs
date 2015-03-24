@@ -1,37 +1,37 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Client.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   Defines the Client type.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
+﻿/// <summary>
+/// The Model namespace.
+/// </summary>
 namespace Stelmashok.ComputerComponents.Model
 {
     using System.Collections.Generic;
 
-    public class Client
+    /// <summary>
+    /// Class Client.
+    /// </summary>
+    public class Client : BaseClass
     {
-        private List<Order> orders;
-
-        public Client()
-        {
-            this.orders = new List<Order>();
-        }
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Client" /> class.
+        /// </summary>
+        /// <value>The full name.</value>
         public string FullName { get; set; }
 
+        /// <summary>
+        /// Gets or sets the phone.
+        /// </summary>
+        /// <value>The phone.</value>
         public string Phone { get; set; }
 
+        /// <summary>
+        /// Gets or sets the address.
+        /// </summary>
+        /// <value>The address.</value>
         public string Address { get; set; }
 
-        public List<Order> Orders
-        {
-            get
-            {
-                return this.orders;
-            }
-        }
+        /// <summary>
+        /// Gets the orders.
+        /// </summary>
+        /// <value>The orders.</value>
+        public List<Order> Orders { get; set; }
     }
 }

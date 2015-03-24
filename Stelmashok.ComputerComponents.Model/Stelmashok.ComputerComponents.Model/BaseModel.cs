@@ -4,14 +4,14 @@
 namespace Stelmashok.ComputerComponents.Model
 {
     /// <summary>
-    /// Class Category.
+    /// Class Identifier.
     /// </summary>
-    public class Category : BaseClass
+    public class BaseClass
     {
         /// <summary>
-        /// Gets or sets the name.
+        /// Gets or sets the identifier.
         /// </summary>
-        /// <value>The name.</value>
-        public string Name { get; set; }
+        /// <value>The identifier.</value>
+        public int Id { get; set; }
     }
 }
